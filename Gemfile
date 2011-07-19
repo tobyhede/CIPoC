@@ -5,7 +5,7 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql2', "< 0.3.0"
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -33,3 +33,5 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+
+gem 'activeadmin'
