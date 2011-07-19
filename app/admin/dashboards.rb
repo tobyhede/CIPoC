@@ -9,7 +9,7 @@ ActiveAdmin::Dashboards.build do
   #
     section "Recent Contacts" do
       ul do
-        Contact.recent(5).collect do |contact|
+        Contact.order("updated_at DESC").collect do |contact|
           li link_to(contact.name, admin_post_path(contact))
         end
       end
